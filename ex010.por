@@ -3,16 +3,15 @@ programa
 	
 	funcao inicio()
 	{
-		real disM, km, hm, dam, dm, cm, mm
-		escreva("Digite uma distância em metros: ")
-		leia(disM)
-		km = disM / 10 / 10 / 10
-		hm = disM / 10 / 10
-		dam = disM / 10
-		dm = disM * 10
-		cm = disM * 10 * 10
-		mm = disM * 10 * 10 * 10
-		escreva("O valor de " + disM + " metros é igual a " + km + " Km, " + hm + " Hm, " + dam + " Dam, " + dm + " dm, " + cm + " cm, " + mm + " mm")
+		inteiro alt, lar, area, quanTin
+		escreva("Qual a altura da parede?")
+		leia(alt)
+		escreva("Qual é a largura da parede?")
+		leia(lar)
+		area = alt * lar
+		quanTin = area / 2
+		escreva("A área total da parede é " + area + " metros quadrados. Serão necessários " + quanTin + " litros de tinta para pintar a parede  toda.")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 361; 
+ * @POSICAO-CURSOR = 358; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

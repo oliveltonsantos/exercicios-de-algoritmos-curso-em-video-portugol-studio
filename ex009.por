@@ -3,16 +3,13 @@ programa
 	
 	funcao inicio()
 	{
-		real disM, km, hm, dam, dm, cm, mm
-		escreva("Digite uma distância em metros: ")
-		leia(disM)
-		km = disM / 10 / 10 / 10
-		hm = disM / 10 / 10
-		dam = disM / 10
-		dm = disM * 10
-		cm = disM * 10 * 10
-		mm = disM * 10 * 10 * 10
-		escreva("O valor de " + disM + " metros é igual a " + km + " Km, " + hm + " Hm, " + dam + " Dam, " + dm + " dm, " + cm + " cm, " + mm + " mm")
+		real dinheiro, dolar, conversao
+		escreva("Quanto dinheiro você tem em sua conta?")
+		leia(dinheiro)
+		dolar = 5.16
+		conversao = dinheiro / dolar
+		escreva("O valor de R$" + dinheiro + " convertido para dólares é igual a $" + conversao)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -20,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 361; 
+ * @POSICAO-CURSOR = 287; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
