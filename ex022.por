@@ -14,6 +14,9 @@ programa
 		se (idade < 18) {
 			escreva("Sua idade é " + idade + " anos, logo faltam " + anosFaltam + " anos para você fazer o alistamento militar.")
 		}
+		senao se (idade == 18) {
+			escreva("Sua idade é " + idade + " anos, logo você já tem idade suficiente para fazer o alistamento militar.")
+		}
 		senao {
 			escreva("Sua idade é " + idade + " anos, logo já se passaram " + anosPassaram + " anos do alistamento militar.")
 		}
@@ -25,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 570; 
+ * @POSICAO-CURSOR = 715; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
