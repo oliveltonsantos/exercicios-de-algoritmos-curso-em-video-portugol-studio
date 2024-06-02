@@ -3,18 +3,19 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro r1, r2, r3
-		escreva("Digite o tamanho da reta 1: ")
-		leia(r1)
-		escreva("Digite o tamanho da reta 2: ")
-		leia(r2)
-		escreva("Digite o tamanho da reta 3: ")
-		leia(r3)
-		se (r1 + r2 > r3 e r1 + r3 > r2 e r2 + r3 > r1) {
-			escreva("O valores das retas informadas podem formar um triângulo.")
+		inteiro n1, n2
+		escreva("Primeiro valor: ")
+		leia(n1)
+		escreva("Segundo valor: ")
+		leia(n2)
+		se (n1 > n2) {
+			escreva("O primeiro valor é maior.")
+		}
+		senao se (n2 > n1) {
+			escreva("O segundo valor é maior.")
 		}
 		senao {
-			escreva("Os valores das retas informadas não podem formar um triângulo.")
+			escreva("Os dois valores são iguais.")
 		}
 	}
 }
@@ -23,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 436; 
+ * @POSICAO-CURSOR = 325; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
