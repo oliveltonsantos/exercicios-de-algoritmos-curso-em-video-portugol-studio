@@ -26,7 +26,7 @@ programa
 		se (area < 100) {
 			escreva("A área do terreno é " + area + " m2, logo é classificado como TERRENO POPULAR.")
 		}
-		senao se (area >= 100 e area <= 500) {
+		senao se (area > 100 e area < 500) {
 			escreva("A área do terreno é " + area + " m2, logo é classificado como TERRENO MASTER.")
 		}
 		senao {
@@ -39,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 958; 
+ * @POSICAO-CURSOR = 956; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
