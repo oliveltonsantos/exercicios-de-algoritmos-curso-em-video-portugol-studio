@@ -9,7 +9,7 @@ de triângulo será formado:
 - ISÓSCELES: dois lados iguais
 - ESCALENO: todos os lados diferentes
 
-Descrição algoritmo 25:
+Descrição do algoritmo 25:
 
 Crie um programa que leia o tamanho de três segmentos de reta.
 Analise seus comprimentos e diga se é possível formar um triângulo com essas
@@ -53,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1146; 
+ * @POSICAO-CURSOR = 284; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
