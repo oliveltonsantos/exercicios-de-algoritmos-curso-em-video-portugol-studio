@@ -1,3 +1,14 @@
+/*
+
+Exercício 25 - Lógica de programação | Portugol Studio
+
+[DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta.
+Analise seus comprimentos e diga se é possível formar um triângulo com essas
+retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento
+de cada lado deve ser menor que a soma dos outros dois.
+
+*/
+
 programa
 {
 	
@@ -23,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 436; 
+ * @POSICAO-CURSOR = 351; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

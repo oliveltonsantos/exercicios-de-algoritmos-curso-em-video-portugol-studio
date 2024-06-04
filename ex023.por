@@ -1,3 +1,17 @@
+/*
+
+Exercício 23 - Lógica de programação | Portugol Studio
+
+Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
+para todos, mas especialmente para mulheres. Faça um programa que leia nome,
+sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
+que:
+
+- Homens ganham 5% de desconto
+- Mulheres ganham 13% de desconto
+
+*/
+
 programa
 {
 	
@@ -31,7 +45,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 218; 
+ * @POSICAO-CURSOR = 364; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

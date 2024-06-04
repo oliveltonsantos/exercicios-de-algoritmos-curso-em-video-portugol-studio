@@ -1,3 +1,12 @@
+/*
+
+Exercício 13 - Lógica de programação | Portugol Studio
+
+Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+seu novo salário, com 15% de aumento.
+
+*/
+
 programa
 {
 	
@@ -15,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 220; 
+ * @POSICAO-CURSOR = 177; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,3 +1,12 @@
+/*
+
+Exercício 11 - Lógica de programação | Portugol Studio
+
+Desenvolva uma lógica que leia os valores de A, B e C de uma equação do
+segundo grau e mostre o valor de Delta.
+
+*/
+
 programa
 {
 	
@@ -20,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 266; 
+ * @POSICAO-CURSOR = 17; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
