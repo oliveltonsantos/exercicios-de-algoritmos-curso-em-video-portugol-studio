@@ -24,7 +24,7 @@ programa
 		salario30 = salario - (salario * 30 / 100)
 		prestacao = casa / (anos * 12)
 		se (prestacao > salario30) {
-			escreva("Seu empréstimo foi NEGADO! \nO valor da sua prestação mensal será de R$" + prestacao + ". \nEste valor excederá 30% do seu salário que é igual a R$" + salario30)
+			escreva("Seu empréstimo foi NEGADO! \nA parcela mensal do seu empréstico de R$" + casa + ", \nserá de R$" + prestacao + " nos próximos " + anos + " anos." + "\nRazão: você só poderia fazer um empréstimo com valores abaixo de R$" + salario30)
 		}
 		senao {
 			escreva("Seu empréstimo foi APROVADO! \nA parcela mensal do seu empréstico de R$" + casa + ", \nserá de R$" + prestacao + " nos próximos " + anos + " anos.")
@@ -36,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1099; 
+ * @POSICAO-CURSOR = 730; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
