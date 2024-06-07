@@ -25,7 +25,7 @@ programa
 	{
 		cadeia carro 
 		real dias, km, Pabaixo100, Pacima100, Labaixo200, Lacima200
-		escreva("Você está alugando um carro: popular ou de luxo? ")
+		escreva("Você está alugando um carro => [1] Popular ou [2] Luxo: ")
 		leia(carro)
 		escreva("Por quantos dias o carro será alugado? ")
 		leia(dias)
@@ -35,7 +35,7 @@ programa
 		Pacima100 = 90 * dias + (0.10 * km)
 		Labaixo200 = 150 * dias + (0.30 * km)
 		Lacima200 = 150 * dias + (0.25 * km)
-		se (carro == "popular" ou carro == "Popular") {
+		se (carro == "1" ou carro == "popular" ou carro == "Popular") {
 			escreva("O carro escolhido é popular.")
 			se (km <= 100) {
 				escreva("\nVocê pagou um total de R$" + Pabaixo100 + ", pelos " + dias + " dias e " + km + "km percorridos.")
@@ -61,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1795; 
+ * @POSICAO-CURSOR = 912; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
