@@ -36,21 +36,23 @@ programa
 		Labaixo200 = 150 * dias + (0.30 * km)
 		Lacima200 = 150 * dias + (0.25 * km)
 		se (carro == "1" ou carro == "popular" ou carro == "Popular") {
-			escreva("O carro escolhido é popular.")
+			escreva("-----DADOS DO ALUGUEL DO CARRO-----")
+			escreva("\nCarro escolhido => [1] Popular")
 			se (km <= 100) {
-				escreva("\nVocê pagou um total de R$" + Pabaixo100 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Pabaixo100)
 			}
 			senao {
-				escreva("\nVocê pagou um total de R$" + Pacima100 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Pacima100)
 			}
 		}
 		senao {
-			escreva("O carro escolhido é de luxo.")
+			escreva("-----DADOS DO ALUGUEL DO CARRO-----")
+			escreva("\nCarro escolhido => [2] Luxo")
 			se (km <= 200) {
-				escreva("\nVocê pagou um total de R$" + Labaixo200 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Labaixo200)
 			}
 			senao {
-				escreva("\nVocê pagou um total de R$" + Lacima200 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Lacima200)
 			}
 		}
 		
@@ -61,7 +63,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 912; 
+ * @POSICAO-CURSOR = 1502; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
