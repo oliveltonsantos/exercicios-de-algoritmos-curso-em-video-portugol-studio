@@ -23,20 +23,35 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia carro, popular, luxo
-		inteiro dias, km, precoPopular, precoLuxo
-		escreva("Você está alugado um carro: popular ou de luxo?")
+		cadeia carro 
+		real dias, km, Pabaixo100, Pacima100, Labaixo200, Lacima200
+		escreva("Você está alugando um carro: popular ou de luxo? ")
 		leia(carro)
 		escreva("Por quantos dias o carro será alugado? ")
 		leia(dias)
 		escreva("Quantos quilômetros(km) foram percorridos? ")
 		leia(km)
-		precoPopular = 90 * dias + 
+		Pabaixo100 = 90 * dias + (0.20 * km)
+		Pacima100 = 90 * dias + (0.10 * km)
+		Labaixo200 = 150 * dias + (0.30 * km)
+		Lacima200 = 150 * dias + (0.25 * km)
 		se (carro == "popular" ou carro == "Popular") {
-			escreva("Seu carro é popular.")
+			escreva("O carro escolhido é popular.")
+			se (km <= 100) {
+				escreva("\nVocê pagou um total de R$" + Pabaixo100 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+			}
+			senao {
+				escreva("\nVocê pagou um total de R$" + Pacima100 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+			}
 		}
 		senao {
-			escreva("Seu carro é de luxo.")
+			escreva("O carro escolhido é de luxo.")
+			se (km <= 200) {
+				escreva("\nVocê pagou um total de R$" + Labaixo200 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+			}
+			senao {
+				escreva("\nVocê pagou um total de R$" + Lacima200 + ", pelos " + dias + " dias e " + km + "km percorridos.")
+			}
 		}
 		
 	}
@@ -46,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1079; 
+ * @POSICAO-CURSOR = 1795; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
