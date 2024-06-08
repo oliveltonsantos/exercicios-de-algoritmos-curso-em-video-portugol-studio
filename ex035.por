@@ -24,35 +24,35 @@ programa
 	funcao inicio()
 	{
 		cadeia carro 
-		real dias, km, Pabaixo100, Pacima100, Labaixo200, Lacima200
+		real dias, km, preco 
 		escreva("Você está alugando um carro => [1] Popular ou [2] Luxo: ")
 		leia(carro)
 		escreva("Por quantos dias o carro será alugado? ")
 		leia(dias)
 		escreva("Quantos quilômetros(km) foram percorridos? ")
 		leia(km)
-		Pabaixo100 = 90 * dias + (0.20 * km)
-		Pacima100 = 90 * dias + (0.10 * km)
-		Labaixo200 = 150 * dias + (0.30 * km)
-		Lacima200 = 150 * dias + (0.25 * km)
 		se (carro == "1" ou carro == "popular" ou carro == "Popular") {
 			escreva("-----DADOS DO ALUGUEL DO CARRO-----")
 			escreva("\nCarro escolhido => [1] Popular")
 			se (km <= 100) {
-				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Pabaixo100)
+				preco = 90 * dias + (0.20 * km)
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + preco)
 			}
 			senao {
-				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Pacima100)
+				preco = 90 * dias + (0.10 * km)
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + preco)
 			}
 		}
 		senao {
 			escreva("-----DADOS DO ALUGUEL DO CARRO-----")
 			escreva("\nCarro escolhido => [2] Luxo")
 			se (km <= 200) {
-				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Labaixo200)
+				preco = 150 * dias + (0.30 * km)
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + preco)
 			}
 			senao {
-				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + Lacima200)
+				preco = 150 * dias + (0.25 * km)
+				escreva("\nDias alugados: " + dias + "\nDistância percorrida: " + km + "km" + "\nTotal a pagar: R$" + preco)
 			}
 		}
 		
@@ -63,7 +63,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2055; 
+ * @POSICAO-CURSOR = 549; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
