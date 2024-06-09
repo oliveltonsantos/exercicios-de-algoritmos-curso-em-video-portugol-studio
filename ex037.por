@@ -35,31 +35,26 @@ programa
 		se (genero == "1" ou genero == "masculino" ou genero == "Masculino") {
 			se (anos < 20) {
 				reajuste = salario + (salario * 3 / 100)
-				escreva("Seu novo salário é: R$" + reajuste)
 			}
 			senao se (anos > 20 e anos < 30) {
 				reajuste = salario + (salario * 13 / 100)
-				escreva("Seu novo salário é: R$" + reajuste)
 			}
 			senao {
 				reajuste = salario + (salario * 25 / 100)
-				escreva("Seu novo salário é: R$" + reajuste)
 			}
 		}
 		senao {
 			se (anos < 15) {
 				reajuste = salario + (salario * 5 / 100)
-				escreva("Seu novo salário é: R$" + reajuste)
 			}
 			senao se (anos > 15 e anos < 20) {
 				reajuste = salario + (salario * 12 / 100)
-				escreva("Seu novo salário é: R$" + reajuste)
 			}
 			senao {
 				reajuste = salario + (salario * 23 / 100)
-				escreva("Seu novo salário é: R$" + reajuste)
 			}
 		}
+		escreva("Seu novo salário é: R$" + reajuste)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -67,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1527; 
+ * @POSICAO-CURSOR = 1326; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
