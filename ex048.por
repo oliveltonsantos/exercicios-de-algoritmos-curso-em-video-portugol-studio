@@ -1,9 +1,9 @@
 /*
 
-Exercício 46 - Lógica de programação | Portugol Studio
+Exercício 48 - Lógica de programação | Portugol Studio
 
-Crie um programa que calcule e mostre na tela o resultado da soma entre 6 +
-8 + 10 + 12 + 14 + ... + 98 + 100.
+Faça um programa que leia 7 números inteiros e no final mostre o somatório
+entre eles.
 
 */
 
@@ -12,18 +12,18 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro cont, soma
-		cont = 6
+		inteiro cont, num, soma
+		cont = 1
 		soma = 0
-		enquanto (cont <= 100) {
-			escreva(cont + " \n+ ")
-			cont = cont + 2
-			soma = soma + cont	
+		enquanto (cont <= 7) {
+			escreva("Digite o " + cont + "º número: ")
+			leia(num)
+			cont = cont + 1
+			soma = soma + num
 		}
-		escreva(" \n= " + soma)
+		escreva("A soma dos números informados é igual a " + soma)
 	}
 }
-
 
 
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 175; 
+ * @POSICAO-CURSOR = 151; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
