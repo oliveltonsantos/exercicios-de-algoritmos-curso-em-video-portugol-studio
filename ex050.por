@@ -17,7 +17,9 @@ programa
 	funcao inicio()
 	{
 		inteiro cont = 0, num, numcinco = 0, numtres = 0
-		escreva("Números sorteados: ")
+		escreva("----------RESULTADO----------")
+		escreva(" \n ")
+		escreva("\nNúmeros sorteados: ")
 		enquanto (cont <= 10) {
 			num = u.sorteia(0, 10)
 			escreva(num + ", ")
@@ -31,6 +33,7 @@ programa
 		}
 		escreva("\nNúmeros acima de 5: " + numcinco)
 		escreva("\nNúmeros divisíveis por 3: " + numtres)
+		escreva(" \n ")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -38,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 263; 
+ * @POSICAO-CURSOR = 811; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
