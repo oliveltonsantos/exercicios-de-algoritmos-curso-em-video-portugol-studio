@@ -16,17 +16,17 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro idade, cont = 1, soma = 0, pessoasMenores = 0, pessoasMaiores = 0, idadeMenor = 0, idadeMaior = 0
-		real media = 0
+		inteiro idade, cont = 1, pessoasMenores = 0, pessoasMaiores = 0, idadeMenor = 0, idadeMaior = 0
+		real soma = 0.0, media = 0.0
 		enquanto (cont <= 10) {
 			escreva("Digite a " + cont + "ª idade: ")
 			leia(idade)
 			soma = soma + idade
 			media = soma / 10
-			se (idade <= 5) {
+			se (idade < 5) {
 				pessoasMenores= pessoasMenores + 1
 			}
-			senao se (idade >= 18 ) {
+			senao se (idade > 18 ) {
 				pessoasMaiores = pessoasMaiores + 1
 				
 			}
@@ -58,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 594; 
+ * @POSICAO-CURSOR = 280; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
