@@ -12,15 +12,29 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro cont = 1, prodPreco
+		inteiro cont = 1
+		real prodPreco, precoMenor = 0, precoMaior = 0
 		enquanto (cont <= 8) {
 			escreva("Qual é o valor do " + cont + "º produto? R$")
 			leia(prodPreco)
-			cont = cont + 1
-			se (prodPreco >= prodPreco) {
-				pMaior = pMaior + 1
+			se (cont == 1) {
+				precoMenor = prodPreco
+				precoMaior = prodPreco
 			}
+			senao {
+				se (prodPreco < precoMenor) {
+					precoMenor = prodPreco
+				}
+				se (prodPreco > precoMaior) {
+					precoMaior = prodPreco
+				}
+			}
+			cont = cont + 1
 		}
+		escreva(" \n ")
+		escreva("----- INFORMAÇÕES SOBRE A SUA COMPRA -----")
+		escreva("\nO menor preço informado foi R$" + precoMenor)
+		escreva("\nO maior preço informado foi R$" + precoMaior)
 		
 	}
 }
@@ -29,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 439; 
+ * @POSICAO-CURSOR = 193; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
