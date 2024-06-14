@@ -17,8 +17,8 @@ programa
 	
 	funcao inicio()
 	{
-		real peso, altura, somaGrupo = 0.0, alturaGrupo = 0.0, peso90 = 0.0, peso50_altura60 = 0.0, peso100_altura90 = 0.0
-		inteiro cont = 1
+		real peso, altura, somaGrupo = 0.0, alturaGrupo = 0.0
+		inteiro cont = 1, peso90 = 0 , peso50_altura60 = 0, peso100_altura90 = 0
 		escreva("-----DADOS INFORMADOS-----")
 		escreva(" \n ")
 		enquanto (cont <= 7) {
@@ -29,10 +29,10 @@ programa
 			se (peso > 90) {
 				peso90 = peso90 + 1
 			}
-			senao se (peso <= 50 e altura <= 1.60) {
+			se (peso <= 50 e altura <= 1.60) {
 				peso50_altura60 = peso50_altura60 + 1
 			}
-			senao {
+			se (peso > 100 e altura > 1.90) {
 				peso100_altura90 = peso100_altura90 + 1
 			}
 			somaGrupo = somaGrupo + altura
@@ -53,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1110; 
+ * @POSICAO-CURSOR = 1056; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
