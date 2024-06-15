@@ -31,6 +31,7 @@ inclua biblioteca Util --> u
             se(jogador == num) {
                 escreva("\n")
                 escreva("Você acertou dessa vez!")
+                escreva("\n--------------------------------------------")
                 escreva(" \n ")
                 jodadorAcertou = jodadorAcertou + 1
             }
@@ -58,7 +59,7 @@ inclua biblioteca Util --> u
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1668; 
+ * @POSICAO-CURSOR = 413; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
