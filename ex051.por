@@ -13,7 +13,7 @@ programa
 	funcao inicio()
 	{
 		inteiro cont = 1
-		real prodPreco, precoMenor = 0, precoMaior = 0
+		real prodPreco, precoMenor = 0.0, precoMaior = 0.0
 		enquanto (cont <= 8) {
 			escreva("Qual é o valor do " + cont + "º produto? R$")
 			leia(prodPreco)
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 193; 
+ * @POSICAO-CURSOR = 298; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
