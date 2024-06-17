@@ -8,31 +8,66 @@ Exercício 31 - Lógica de programação | Portugol Studio
 
 programa
 {
-	inclua biblioteca Util --> u
+	
+inclua biblioteca Util --> u
 	funcao inicio()
 	{
-		
-		inteiro jogo, jogador, pedra = 1, papel = 2, tesoura = 3
-		jogo = u.sorteia(1, 3)
-		escreva("Escolha um número: 1 - PEDRA, 2 - PAPEL ou 3 - TESOURA : ")
+		inteiro sorteio, jogador
+		cadeia jpedra = "PEDRA", jpapel = "PAPEL", jtesoura = "TESOURA"
+		sorteio = u.sorteia(1, 3)
+		escreva("\nEscolha um número abaixo:")
+		escreva("\n")
+		escreva("\n[1] Pedra")
+		escreva("\n[2] Papel")
+		escreva("\n[3] Tesoura")
+		escreva("\n")
+		escreva("\nSua opção escolhida será: ")
 		leia(jogador)
-		se ((jogador == 1 e jogo == 3) ou (jogador == 3 e jogo == 2) ou (jogador == 2 e jogo == 1)) {
-			escreva("Você ganhou! \nO computador escolheu " + jogo)
+		escreva("\n-------------------------")
+		se (jogador == 1 e sorteio == 3) {
+			escreva("\n")
+			escreva("\nVocê ganhou! O computador escolheu " + jpedra + ".")
+			escreva("\n")
 		}
-		senao se ((jogador == 1 e jogo == 1) ou (jogador == 2 e jogo == 2) ou (jogador == 3 e jogo == 3)) {
-			escreva("O computador jogou " + jogo + ", logo ninguém ganhou. JOGUE NOVAMENTE!")
+		senao se (jogador == 3 e sorteio == 2) {
+			escreva("\n")
+			escreva("\nVocê ganhou! O computador escolheu " + jpapel + ".")
+			escreva("\n")
+		}
+		senao se (jogador == 2 e sorteio == 1) {
+			escreva("\n")
+			escreva("\nVocê ganhou! O computador escolheu " + jpedra + ".")
+			escreva("\n")
+		}
+		senao se (jogador == 3 e sorteio == 1) {
+			escreva("\n")
+			escreva("\nVocê PERDEU...O computador escolheu " + jpedra + ".")
+			escreva("\n")
+		}
+		senao se (jogador == 2 e sorteio == 3) {
+			escreva("\n")
+			escreva("\nVocê PERDEU...O computador escolheu " + jtesoura + ".")
+			escreva("\n")
+		}
+		senao se (jogador == 1 e sorteio == 2) {
+			escreva("\n")
+			escreva("\nVocê PERDEU...O computador escolheu " + jpapel + ".")
+			escreva("\n")
 		}
 		senao {
-			escreva("Você perdeu miserável! \nO computador escolheu " + jogo)
+			escreva("\n")
+			escreva("\nDeu EMPATE! Vamos tentar outra vez!")
+			escreva("\n")
 		}
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 376; 
+ * @POSICAO-CURSOR = 1545; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
