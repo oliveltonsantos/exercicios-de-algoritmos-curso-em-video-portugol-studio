@@ -26,32 +26,44 @@ inclua biblioteca Util --> u
 		escreva("\n-------------------------")
 		se (jogador == 1 e sorteio == 3) {
 			escreva("\n")
-			escreva("\nVocê ganhou! O computador escolheu " + jpedra + ".")
+			escreva("\nVocê GANHOU! O computador escolheu " + jtesoura+ ".")
+			escreva("\n")
+			escreva("\n--> REGRA: pedra ganha da tesoura amassando-a ou quebrando-a.")
 			escreva("\n")
 		}
 		senao se (jogador == 3 e sorteio == 2) {
 			escreva("\n")
-			escreva("\nVocê ganhou! O computador escolheu " + jpapel + ".")
+			escreva("\nVocê GANHOU! O computador escolheu " + jpapel + ".")
+			escreva("\n")
+			escreva("\n--> REGRA: tesoura ganha do papel cortando-o.")
 			escreva("\n")
 		}
 		senao se (jogador == 2 e sorteio == 1) {
 			escreva("\n")
-			escreva("\nVocê ganhou! O computador escolheu " + jpedra + ".")
+			escreva("\nVocê GANHOU! O computador escolheu " + jpedra + ".")
+			escreva("\n")
+			escreva("\n--> REGRA: papel ganha da pedra embrulhando-a.")
 			escreva("\n")
 		}
 		senao se (jogador == 3 e sorteio == 1) {
 			escreva("\n")
 			escreva("\nVocê PERDEU...O computador escolheu " + jpedra + ".")
 			escreva("\n")
+			escreva("\n--> REGRA: pedra ganha da tesoura amassando-a ou quebrando-a.")
+			escreva("\n")
 		}
 		senao se (jogador == 2 e sorteio == 3) {
 			escreva("\n")
 			escreva("\nVocê PERDEU...O computador escolheu " + jtesoura + ".")
 			escreva("\n")
+			escreva("\n--> REGRA: tesoura ganha do papel cortando-o.")
+			escreva("\n")
 		}
 		senao se (jogador == 1 e sorteio == 2) {
 			escreva("\n")
 			escreva("\nVocê PERDEU...O computador escolheu " + jpapel + ".")
+			escreva("\n")
+			escreva("\n--> REGRA: papel ganha da pedra embrulhando-a.")
 			escreva("\n")
 		}
 		senao {
@@ -67,7 +79,7 @@ inclua biblioteca Util --> u
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1545; 
+ * @POSICAO-CURSOR = 120; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
