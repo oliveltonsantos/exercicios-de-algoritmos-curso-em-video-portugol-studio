@@ -18,7 +18,7 @@ programa
 		real sal = 0.0, salM = 0.0, salF = 0.0
 		escreva("CADASTRO DE SALÁRIOS")
 		escreva("\n")
-		enquanto (resp == "s") {
+		enquanto (resp == "s" ou resp == "S") {
 			escreva("\nQual é o salário do funcionário(a)? R$")
 			leia(sal)
 			escreva("\n")
@@ -53,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1202; 
+ * @POSICAO-CURSOR = 1368; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
