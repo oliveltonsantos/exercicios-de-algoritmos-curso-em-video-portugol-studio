@@ -13,25 +13,23 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro idade = 0, soma = 0, alunos = 0
-		real mediaA = 0.0
+		inteiro idade = 0, somaIda = 0, totAlunos = 0
+		real media = 0.0
 		escreva("Para finalizar o cadastro de alunos digite: 999")
 		escreva(" \n ")
 		enquanto (idade != 999) {
-			escreva("\nQual é a idade do aluno(a): ")
+			escreva("\nQual é a idade do(a) " + (totAlunos + 1)  + "º aluno(a): ")
 			leia(idade)
 			se (idade != 999) {
-				soma = soma + idade
-				alunos = alunos + 1
-				mediaA = soma / alunos
+				somaIda = somaIda + idade
+				totAlunos = totAlunos + 1
+				media = somaIda / totAlunos
 			}
-			
-			
 		}
 		escreva("-------------------------------------------")
 		escreva(" \n ")
-		escreva("\nQuantidade total de alunos: " + alunos)
-		escreva("\nMédia de idade de todos os alunos: " + mediaA)
+		escreva("\nQuantidade total de alunos/alunas: " + totAlunos)
+		escreva("\nMédia de idade de todos os alunos/alunas: " + media)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -39,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 820; 
+ * @POSICAO-CURSOR = 374; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
