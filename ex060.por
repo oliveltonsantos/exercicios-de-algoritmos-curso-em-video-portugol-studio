@@ -23,6 +23,7 @@ programa
 		inteiro idade, sexo, totgrupo = 0, idasoma = 0,  pesvelhaida = 0, sexomas = 0, hom30 = 0, sexofem = 0, mul18 = 0, muljovida = 0
 		real medgrupo = 0.0
 		enquanto (res == 'S' ou res == 's') {
+			escreva("\nInsira os dados da " + (totgrupo + 1) + "ª pessoa:")
 			escreva(" \n ")
 			escreva("\nQual é o nome da pessoa? => ")
 			leia(nome)
@@ -39,6 +40,7 @@ programa
 			escreva("\nDigite uma letra para: [S] Sim / [N] Não => ")
 			leia(res)
 			escreva("\n-----------------------------------------------------")
+			escreva(" \n ")
 			totgrupo = totgrupo + 1
 			idasoma = idasoma + idade
 			medgrupo = idasoma / totgrupo
@@ -91,7 +93,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1993; 
+ * @POSICAO-CURSOR = 391; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
