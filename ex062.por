@@ -34,7 +34,7 @@ programa
 			}
 			cont = cont + 1
 		}
-		enquanto (res == 'S')
+		enquanto (res == 's')
 		escreva("----------------------------------------")
 		escreva("\n")
 		escreva("\nTotal de idades cadastradas: " + totida)
@@ -47,7 +47,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 505; 
+ * @POSICAO-CURSOR = 902; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
