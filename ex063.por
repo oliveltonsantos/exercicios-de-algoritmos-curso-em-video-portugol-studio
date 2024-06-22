@@ -19,7 +19,7 @@ programa
 	funcao inicio()
 	{	
 		caracter res
-		inteiro num, cont = 1, numsoma = 0, nummenor = 0, numpar = 0, quantnumpar = 0
+		inteiro num, cont = 1, numsoma = 0, nummenor = 0, numpar = 0
 		real nummedia = 0.0
 		faca {
 			escreva("\nDigite o " + cont + "º valor: ")
@@ -32,9 +32,8 @@ programa
 			escreva("\n")
 			numsoma = numsoma + num
 			nummedia = numsoma / cont
-			numpar = num % 2
-			se (numpar == 0) {
-				quantnumpar = quantnumpar + 1
+			se (num % 2 == 0) {
+				numpar = numpar + 1
 			}
 			se (cont == 1) {
 				nummenor = num
@@ -50,9 +49,9 @@ programa
 		escreva("\nRESULTADOS:")
 		escreva(" \n ")
 		escreva("\nSoma de todos os valores: " + numsoma)
-		escreva("\nO menor número foi " + nummenor)
-		escreva("\nA media dos valores é " + nummedia)
-		escreva("\nTotal de números pares: " + quantnumpar)
+		escreva("\nO menor número é: " + nummenor)
+		escreva("\nA média dos valores é: " + nummedia)
+		escreva("\nTotal de números pares: " + numpar)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -60,7 +59,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1167; 
+ * @POSICAO-CURSOR = 1319; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
