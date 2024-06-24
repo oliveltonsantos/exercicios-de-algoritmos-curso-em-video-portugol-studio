@@ -22,7 +22,7 @@ programa
 		escreva("\n")
 		escreva("---------------------------------")
 		escreva("\n")
-		nfinal = ninicial - 1 + (razao * 10)
+		nfinal = ninicial + (10 - 1) * razao
 		escreva("\nSequência: ")
 		para (cont = ninicial; cont <= nfinal; cont += razao) {
 			ninicial = ninicial + razao
@@ -38,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 254; 
+ * @POSICAO-CURSOR = 574; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
