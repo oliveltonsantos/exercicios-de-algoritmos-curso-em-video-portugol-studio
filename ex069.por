@@ -13,34 +13,32 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro cont, num, rpa, soma = 0
+		inteiro cont, ninicial, nfinal, razao, soma = 0
 		escreva("Digite um número: ")
-		leia(num)
+		leia(ninicial)
 		escreva("\n")
 		escreva("Qual é a razão da P.A? => ")
-		leia(rpa)
+		leia(razao)
 		escreva("\n")
 		escreva("---------------------------------")
 		escreva("\n")
+		nfinal = ninicial - 1 + (razao * 10)
 		escreva("\nSequência: ")
-		para (cont = 0; cont < 10; cont++) {
-			num = num + rpa
-			soma = soma + num
-			escreva(num + ", ")
+		para (cont = ninicial; cont <= nfinal; cont += razao) {
+			ninicial = ninicial + razao
+			soma = soma + (ninicial - razao)
+			escreva(cont + ", ")
 		}
 		escreva("\n")
 		escreva("\nSoma total dos números: " + soma)
 	}
 }
-
-
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 455; 
+ * @POSICAO-CURSOR = 254; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
