@@ -17,7 +17,7 @@ programa
 {
 	
 	funcao inicio()
-	{	
+	{	
 		caracter res = 's'
 		cadeia nome, pesvelhanome = " ", muljovnome = " "
 		inteiro idade, sexo, totgrupo = 0, idasoma = 0,  pesvelhaida = 0, sexomas = 0, hom30 = 0, sexofem = 0, mul18 = 0, muljovida = 0
@@ -75,7 +75,6 @@ programa
 						muljovnome = nome
 					}
 				}
-				
 			}
 		}
 		escreva(" \n ")
@@ -93,7 +92,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 391; 
+ * @POSICAO-CURSOR = 2017; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

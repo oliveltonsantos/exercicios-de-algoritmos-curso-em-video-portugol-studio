@@ -67,7 +67,6 @@ programa
         escreva("\nTotal de homens cadastrados: " + sexoH)
         escreva("\nIdade média dos homens: " + mediaH)
         escreva("\nIdade da mulher mais jovem: " + idaMenorM + " anos.")
-
     }
 }
 /* $$$ Portugol Studio $$$ 
@@ -75,7 +74,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2173; 
+ * @POSICAO-CURSOR = 1211; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
