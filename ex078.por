@@ -16,7 +16,7 @@ programa
 		inteiro n[15], i, c = 0
 
 		para (i = 0; i < 15; i++) {
-			n[i] = u.sorteia(0, 50)
+			n[i] = u.sorteia(0, 100)
 		}
 
 		escreva("\nOs seguintes números são múltiplos de 10: ")
@@ -40,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 785; 
+ * @POSICAO-CURSOR = 255; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {n, 16, 10, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
