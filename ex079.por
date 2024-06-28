@@ -20,7 +20,7 @@ programa
 		}
 
 		escreva("---------------------------------------")
-		escreva("\nNúmeros pares: ")
+		escreva("\n          Números pares              ")
 		escreva("\n-------------------------------------")
 		escreva("\n")
 		para (i = 0; i < 10; i++) {
@@ -32,7 +32,7 @@ programa
 		
 		escreva("\n")
 		escreva("---------------------------------------")
-		escreva("\nNúmeros ímpares: ")
+		escreva("\n          Números ímpares            ")
 		escreva("\n-------------------------------------")
 		escreva("\n")
 		
@@ -49,7 +49,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 655; 
+ * @POSICAO-CURSOR = 500; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {n, 16, 10, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
