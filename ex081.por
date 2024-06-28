@@ -27,11 +27,7 @@ programa
 			totida = totida + 1
 			mediaida = somaida / totida
 
-			se (v[i] == 0) {
-				maiorida = v[i]
-				pmaiorida = i
-			}
-			senao se (v[i] >= maiorida) {
+			se (v[i] >= maiorida) {
 				maiorida = v[i]
 				pmaiorida = i
 			}
@@ -61,9 +57,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 829; 
+ * @POSICAO-CURSOR = 364; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {v, 20, 10, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
