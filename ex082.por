@@ -17,27 +17,29 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n[10], i, nalunos = 0, nmaiorpos = 0
-		real nsoma = 0.0, nmedia = 0.0, nmaior = 0.0
+		inteiro i, nalunos = 0, nmaiorpos = 0
+		real n[10], nsoma = 0.0, nmedia = 0.0, nmaior = 0.0
 
 		para (i = 0; i < 10; i++) {
 			escreva("Qual é a nota do(a) " + (i + 1) + "º aluno(a): ")
 			leia(n[i])
 
 			nsoma = nsoma + n[i]
-			nmedia = nsoma / i
-
-			se (nmedia < n[i]) {
-				nalunos = nalunos + 1
-			}
+			nmedia = nsoma / 10
 
 			se (n[i] > nmaior) {
 				nmaior = n[i]
 				nmaiorpos = i
 			}
-
 		}
 
+		para (i = 0; i < 10; i++) {
+			
+			se (n[i] > nmedia) {
+				nalunos = nalunos + 1
+			}
+		}
+		
 		escreva("\n")
 		escreva("-------------------------------------------------")
 		escreva("\n")
@@ -53,7 +55,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 374; 
+ * @POSICAO-CURSOR = 599; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
