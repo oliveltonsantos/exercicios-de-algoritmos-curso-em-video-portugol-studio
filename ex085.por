@@ -18,14 +18,15 @@ programa
 		real vsal[5]
 
 		para (i = 0; i < 5; i++) {
-			escreva("\nQual é o nome da " + (i + 1) + "ª pessoa? => ")
-			leia(vn[i])
 			escreva("\n")
-			escreva("Qual é o sexo da " + (i + 1) + "ª pessoa?")
-			escreva("\nDigite [1] Masculino ou [2] Feminino => ")
+			escreva("Digite os dados da " + (i + 1) + "ª pessoa?")
+			escreva("\n")
+			escreva("\nNome => ")
+			leia(vn[i])
+			escreva("\nSexo: [1] Masculino ou [2] Feminino => ")
 			leia(vsex[i])
 			escreva("\n")
-			escreva("Qual é o salário da " + (i + 1) + "ª pessoa? => ")
+			escreva("Salário => R$")
 			leia(vsal[i])
 			escreva("\n-------------------------------------------------")
 			escreva("\n")
@@ -49,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 811; 
+ * @POSICAO-CURSOR = 419; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
