@@ -14,26 +14,32 @@ programa
 	inclua biblioteca Util --> u
 	funcao inicio()
 	{
-		inteiro v[20], i, maior = 0, od = 0
-		escreva("\nNúmeros sorteados: ")
+		inteiro v[20], i = 0, i2 = 0, vtemp
+
+		
+		escreva("Números sorteados: ")
+		
 		para (i = 0; i < 20; i++) {
 			v[i] = u.sorteia(0, 99)
 			escreva(v[i] + ", ")
 		}
 
+		escreva("\n")
 		escreva("\nNúmeros em ordem crescente: ")
+		
+		para (i = 0; i < 20; i++) {
+			para (i2 = i + 1; i2 < 20; i2++) {
+				se (v[i] > v[i2]) {
+					vtemp = v[i]
+					v[i] = v[i2]
+					v[i2] = vtemp
+				}
+			}
+		}
 
 		para (i = 0; i < 20; i++) {
-			se (v[i] == 99) {
-			od = v[i]
+			escreva(v[i] + ", ")
 		}
-		senao se (v[i] < od) {
-			od = v[i]
-		}
-		
-		escreva(od + ", ")
-		}
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -41,9 +47,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 727; 
+ * @POSICAO-CURSOR = 416; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {v, 17, 10, 1}-{vtemp, 17, 32, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
