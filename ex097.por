@@ -19,18 +19,22 @@ programa
 {
 	funcao inteiro maior(inteiro n1, inteiro n2, inteiro n3) {
 		inteiro res = 0
-		
-		se (n1 > n2 e n1 > n3) {
-			escreva("O valor " + n1 + " é maior do que " + n2 + " e " + n3)
+
+		se (n1 == n2 e n2 == n3 e n3 == n1) {
+			escreva("\nTodos os valores são iguais.")
 		}
 		senao {
-			se (n2 > n1 e n2 > n3) {
-				escreva("O valor " + n2 + " é maior do que " + n1 + " e " + n3)
+			se (n1 >= n2 e n1 >= n3) {
+				escreva("\nO valor " + n1 + " é maior do que " + n2 + " e " + n3)
+			}
+			senao se (n2 >= n1 e n2 >= n3) {
+				escreva("\nO valor " + n2 + " é maior do que " + n1 + " e " + n3)
 			}
 			senao {
-				escreva("O valor " + n3 + " é maior do que " + n1 + " e " + n2)
+				escreva("\nO valor " + n3 + " é maior do que " + n1 + " e " + n2)
 			}
 		}
+		
 		retorne res
 	}
 	
@@ -43,8 +47,9 @@ programa
 		leia(n2)
 		escreva("Digite o terceiro valor: ")
 		leia(n3)
+		escreva("\n=================================")
+		escreva("\n")
 		vm = maior(n1, n2, n3)
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -52,7 +57,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 937; 
+ * @POSICAO-CURSOR = 1339; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
