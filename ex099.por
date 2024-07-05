@@ -12,11 +12,11 @@ Ex: Potencia(5,2) vai calcular 52 = 25
 
 programa
 {
-	funcao inteiro potencia(inteiro n1, inteiro n2) {
+	funcao inteiro potencia(inteiro base, inteiro expoente) {
 		inteiro cont = 0, res = 1
 		
-		enquanto (cont < n2) {
-			res *= n1
+		enquanto (cont < expoente) {
+			res = base * res
 			cont++
 		}
 	
@@ -25,16 +25,16 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n1, n2, r
+		inteiro base, expoente, r
 		escreva("Vamos calcular a potência de dois números.")
 		escreva("\n")
 		escreva("\nDigite o valor de base: ")
-		leia(n1)
+		leia(base)
 		escreva("Digite o valor de expoente: ")
-		leia(n2)
-		r = potencia(n1,n2)
+		leia(expoente)
+		r = potencia(base, expoente)
 		escreva("\n")
-		escreva("A potência de " + n1 + " elevado a " + n2 + " é " + r)
+		escreva("A potência de " + base + " elevado a " + expoente + " é " + r)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -42,7 +42,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 437; 
+ * @POSICAO-CURSOR = 420; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
